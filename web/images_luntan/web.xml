@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <context-param>
+        <param-name>jwconfigclass</param-name>
+        <param-value>com.demo.config.ErwinJWConfig</param-value>
+    </context-param>
+    <filter>
+        <filter-name>CharacterFilter</filter-name>
+        <filter-class>com.demo.filter.CharacterFilter</filter-class>
+        <init-param>
+            <param-name>encodeRequest</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>encodeResponse</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>WeChatServlet</servlet-name>
+        <servlet-class>com.jw.servlet.WeChatServlet</servlet-class>
+    </servlet>
+    
+
+    <servlet-mapping>
+        <servlet-name>WeChatServlet</servlet-name>
+        <url-pattern>/mainservlet.action</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadImageServlet</servlet-name>
+        <servlet-class>com.demo.servlet.UploadImageServlet</servlet-class>
+        <init-param>
+            <param-name>filePathDir</param-name>
+            <param-value>image</param-value>
+        </init-param>
+        <init-param>
+            <param-name>tempDir</param-name>
+            <param-value>tempDir</param-value>
+        </init-param>
+        <init-param>
+            <param-name>fileMaxSize</param-name>
+            <param-value>10240000</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadImageServlet</servlet-name>
+        <url-pattern>/UploadImage.action</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FacilityServlet</servlet-name>
+        <servlet-class>com.demo.servlet.FacilityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FacilityServlet</servlet-name>
+        <url-pattern>/FacilityServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

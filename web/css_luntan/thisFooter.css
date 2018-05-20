@@ -1,0 +1,105 @@
+/*-- footer --*/
+.footer {
+  padding: 4em 0;
+  background-color:#4D4D4D;
+}
+.footer-grid h3.title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.8em;
+    color: #C9C9C9;
+	margin:0;
+}
+.footer-grid ul {
+  margin: 0;
+  padding: 2em 0 0;
+}
+.footer-grid ul li {
+    display: block;
+	margin: 0 0 10px;
+	color:#818180;
+	font-size: 14px;
+}
+.footer-grid ul li a {
+    font-size: 14px;
+    color: #8D8D8C;
+    text-decoration: none;
+    padding: 0.2em 0;
+    display: inline-block;
+}
+.footer-grid ul li a:hover {
+  color:#fff;
+}
+.contact-grid ul li span {
+  left: -15px;
+}
+.footer-grid ul li.adrs {
+    padding-left:1.1em;
+}
+.copy {
+  text-align: center;
+  background:#454545;
+  padding:1.5em 0;
+}
+.copy p {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0 0;
+	font-family: 'Comfortaa', cursive;
+}
+.copy p a {
+  color:#2DCC70;
+  text-decoration:none;
+}
+.copy p a:hover{
+  color:#fff;
+  border-bottom:3px double #2DCC70;
+}
+.copy-left {
+    float: left;
+}
+.social-icons {
+    float: right;
+}
+.social-icons ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-icons ul li a.fb {
+    background: url(../images/iconsprite.png)no-repeat 10px 3px;   
+}
+.social-icons ul li a.fb:hover{
+	background-color:#3b5998;
+}
+.social-icons ul li a {
+    background: url(../images/iconsprite.png)no-repeat 3px -33px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: none;
+}
+.social-icons ul li a.pn {
+    background: url(../images/iconsprite.png)no-repeat 6px -108px;
+}
+.social-icons ul li a.pn:hover {
+   background-color:#cc2127;
+}
+.social-icons ul li a.gg {
+    background: url(../images/iconsprite.png)no-repeat 6px -72px;
+}
+.social-icons ul li a.gg:hover {
+   background-color:#dd4b39;
+}
+.social-icons ul li a:hover {
+    transform: rotatey(360deg);
+	-webkit-transform: rotatey(360deg);
+	-o-transform: rotatey(360deg);
+	-moz-transform: rotatey(360deg);
+	-ms-transform: rotatey(360deg);
+    transition: .5s all;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+	background-color:#55acee;
+}
+/*-- //footer --*/
